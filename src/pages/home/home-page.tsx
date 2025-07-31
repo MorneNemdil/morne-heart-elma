@@ -14,7 +14,10 @@ import SleepingSofaPic from "@/assets/pictures/sleeping-sofa.jpg";
 // import MirrorPic from "@/assets/pictures/mirror.jpg";
 // import SeriousPic from "@/assets/pictures/serious.jpg";
 // import StandingFilterPic from "@/assets/pictures/standing-filter.jpg";
-// import SunsetPic from "@/assets/pictures/sunset.jpg";
+import SunsetPic from "@/assets/pictures/sunset.jpg";
+import LondonGatesPic from "@/assets/pictures/london-gates.jpg";
+import BigBenPic from "@/assets/pictures/big-ben.jpg";
+
 
 const HomePage = () => {
     const { setTheme } = useTheme();
@@ -22,41 +25,45 @@ const HomePage = () => {
 
     useEffect(() => setTheme('dark'), []);
 
-    const tributeMessage = "A tribute to the most beautiful, smart, thoughtful, and kind person in the world - my wife, Elma :)"
+    const tributeMessage = "A tribute to the most beautiful, smart, thoughtful, and kind person in the world - the love of my life, Elma :)"
 
     const DesktopHome = () => {
         return (
             <div className="flex justify-center h-[93vh]">
                 <div className="w-100 flex flex-col translate-x-20 translate-y-12">
                     <div className="flex justify-center w-full">
-                        <PolaroidImage srcImg={BalconyPic} className="rotate-15" />
+                        <PolaroidImage srcImg={BalconyPic} className="rotate-11" />
                     </div>
-                    <div className="w-full">
-                        <PolaroidImage srcImg={BedKissingPic} className="-rotate-15" />
+                    <div className="w-full flex justify-end">
+                        <PolaroidImage srcImg={BedKissingPic} className="rotate-7" />
+
+                        <PolaroidImage srcImg={ElevatorPic} className="-rotate-15" />
                     </div>
-                    <div className="flex justify-end w-full">
-                        <PolaroidImage srcImg={ElevatorPic} className="rotate-15" />
+                    <div className="w-full flex justify-center">
+                        <PolaroidImage srcImg={BigBenPic} className="-rotate-12" />
                     </div>
                 </div>
                 <div className="flex flex-col items-center -translate-y-10">
                     <Card className="translate-y-29">
                         <CardContent>
-                            <div className=" w-[30vw] text-center text-white text-xl">{tributeMessage}</div>
+                            <div className=" w-[30vw] text-center text-white text-3xl">{tributeMessage}</div>
                         </CardContent>
                     </Card>
                     <div className="text-red-500 drop-shadow-[0_0_10px_rgba(255,0,0,190)] -translate-y-10">
-                        <MainHeart picture={RestaurantFilterPic} />
+                        <MainHeart picture={LondonGatesPic} />
                     </div>
                 </div>
                 <div className="w-100 flex flex-col -translate-x-20 translate-y-12">
                     <div className="flex justify-center w-full">
-                        <PolaroidImage srcImg={KissingBusPic} className="-rotate-15" />
+                        <PolaroidImage srcImg={KissingBusPic} className="-rotate-11" />
                     </div>
                     <div className="w-full flex justify-end">
+                        <PolaroidImage srcImg={SunsetPic} className="-rotate-7" />
+
                         <PolaroidImage srcImg={SleepingSofaPic} className="rotate-15" />
                     </div>
-                    <div className="w-full">
-                        <PolaroidImage srcImg={RestaurantFilterPic} className="-rotate-15" />
+                    <div className="w-full flex justify-center">
+                        <PolaroidImage srcImg={RestaurantFilterPic} className="rotate-12" />
                     </div>
                 </div>
             </div>
@@ -69,7 +76,7 @@ const HomePage = () => {
                 <div className="w-full overflow-x-hidden overflow-y-hidden flex flex-col items-center">
                     <Card className="translate-y-17">
                         <CardContent>
-                            <div className="w-[70vw] sm:w-[40vw] text-center text-white text-xl">{tributeMessage}</div>
+                            <div className="w-[70vw] sm:w-[40vw] text-center text-white text-3xl">{tributeMessage}</div>
                         </CardContent>
                     </Card>
                     <div className="text-red-500 drop-shadow-[0_0_10px_rgba(255,0,0,190)] w-100 sm:w-auto">
