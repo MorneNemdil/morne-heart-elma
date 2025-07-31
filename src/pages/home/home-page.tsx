@@ -25,7 +25,7 @@ const HomePage = () => {
 
     useEffect(() => setTheme('dark'), []);
 
-    const tributeMessage = "A tribute to the most beautiful, smart, thoughtful, and kind person in the world - the love of my life, Elma :)"
+    const tributeMessage = "A tribute to the most beautiful, smart, thoughtful, and kind person in the world - the love of my life, Elma 💞"
 
     const DesktopHome = () => {
         return (
