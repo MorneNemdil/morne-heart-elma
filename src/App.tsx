@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "sonner"
 import NotFound from "./pages/error/not-found"
 import Header from "@/components/header"
-import BlogPage from "./pages/blog/blog-page"
+// import BlogPage from "./pages/blog/blog-page"
 
 // Appwrite imports:
 // import { UserProvider } from "./lib/context/user"
