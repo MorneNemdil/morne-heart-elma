@@ -80,7 +80,7 @@ const HomePage = () => {
                         </CardContent>
                     </Card>
                     <div className="text-red-500 drop-shadow-[0_0_10px_rgba(255,0,0,190)] w-100 sm:w-auto">
-                        <MainHeart picture={RestaurantFilterPic} />
+                        <MainHeart picture={LondonGatesPic} />
                     </div>
                 </div>
                 <div className="w-100 flex flex-col">
